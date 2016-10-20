@@ -1,1 +1,10 @@
 language: java
+
+deploy:
+  provider: releases
+  api_key:
+    secure: JdVJijsC1IkwQEk03Vf2VwK8ivaEkJi//wHvA4V7wQz0O4ckwIFTlocNYDhegG2wnkyXZH5S2IoYIItI5NDe9qDv40Cu06/A0MrkVFL/dfgq72ZoR13oDZcFzWhUrZN9NCGGCIJdmjoBsJMGtsZzEOAp+xsJm3aNvpTidtCMMGIkWuYWqFzzxWaeuARQ/hePexyfO4XxaKjt9wRHIhax9Wfoslt8Uz++1sBgqC2yVOINBDwhBbhn46RkeK5QShlzNZKRc77T82aZ22O9JhHBEHkIQrxeBx4SLDqiTzYTWHWf885qO+mz0KrQGlXTrCbnjPKISdae3Ptqhf//TOyXE13otc77CWGKUIA2hOF1PDZ+673eHQGy/GOCrDFFDHFO1YX2X0e9RiFHaommRZiQ3P+V0b8Q0Jx5YsgpUV6nqXfZKSYqPt6PYowxU9aSxXgLa7GmxriHywOzhnCrx74Zj/TeKDRYumhea7KFwrIutGeTKo+N2fhDDDOUTtCZ6FrbiTz7ZzfasGA68hBWUh9UpufUYbIemN6PIdh7ovVfuDkWeeJr/VK6OimnnKT4p5E24UCjsad9Zho8eqWtl1HKk+NU49co4PgPQbmdJbpktuxdkAk8eHLZORvrTjog08ly4M30z8/eqyGNYH/6gdbcVFTDiuG53qW3nKTMgK3Cp8w=
+  file: target/noapproval-script-security.hpi
+  on:
+    tags: true
+    repo: guilhem/noapproval-script-security
